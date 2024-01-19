@@ -1,0 +1,8 @@
+com/mashreq/meetingroom/booking/exception/RoomBookingException.class
+com/mashreq/meetingroom/booking/repository/ReservationRepository.class
+com/mashreq/meetingroom/booking/controller/ReservationController.class
+com/mashreq/meetingroom/booking/RoomBookingApplication.class
+com/mashreq/meetingroom/booking/entity/Reservations.class
+com/mashreq/meetingroom/booking/repository/MeetingRoomRepository.class
+com/mashreq/meetingroom/booking/entity/RoomMaintenance.class
+com/mashreq/meetingroom/booking/exception/RoomBookingAdvice.class

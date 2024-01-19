@@ -17,7 +17,7 @@
 1. Execute ` mvn test` which will run Unit and Integration tests
 2. Execute `mvn -Dtest= {AnyTest} test ` to run any particular test class.
 
-### Steps to Run the Project locally
+### Steps to Run the Project Locally
 1. Execute `mvn spring-boot:run` to run the application locally.
 
 
@@ -74,7 +74,9 @@ Status Code: 200 OK
 Status Code: 400 Bad Request
 
 {
-  "error": "Invalid request payload. Check the request format."
+    "status": "BAD_REQUEST",
+    "errorCode": "E_ROOMS_UNDER_MAINTENANCE",
+    "errorDetails": "Meeting Rooms under Maintenance for the requested time."
 }
 Status Code: 500 Internal Server Error
 
@@ -97,7 +99,7 @@ persons (int): The desired no of persons for booking.
 roomId (Integer): The unique identifier of the reserved meeting room.
 beginTime (LocalTime): The beginning time of the reservation.
 endTime (LocalTime): The ending time of the reservation.
-bookingDate (LocalDate): The date when the reservation made.
+bookingDate (LocalDate): The date when the reservation was made.
 bookingId (String): The unique identifier for the reservation.
 ```
 
@@ -147,7 +149,9 @@ HTTP Status Code: 400 Bad Request
 Response Body:
 
 {
-  "error": "Invalid parameter values. Please provide valid beginTime and endTime."
+    "status": "BAD_REQUEST",
+    "errorCode": "E_ROOMS_UNDER_MAINTENANCE",
+    "errorDetails": "Meeting Rooms under Maintenance for the requested time."
 }
 HTTP Status Code: 500 Internal Server Error
 
