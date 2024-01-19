@@ -1,7 +1,7 @@
 INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Amaze',3,'27th Floor',true);
-INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Beauty',7,'27th Floor',true);
-INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Inspire',12,'27th Floor',true);
-INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Strive',20,'27th Floor',true);
+INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Beauty',7,'26th Floor',true);
+INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Inspire',12,'25th Floor',true);
+INSERT INTO meeting_room (name,capacity,location,commissioned) VALUES ( 'Strive',20,'26th Floor',true);
 
 
 INSERT INTO room_maintenance (room_id,begin_time,end_time) VALUES ( select id from meeting_room where name='Amaze','9:00:00','9:15:00');
